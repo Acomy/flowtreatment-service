@@ -1,0 +1,18 @@
+server:
+  port: 8012
+  tomcat:
+    uri-encoding: UTF-8
+    accept-count: 500
+    max-threads: 500
+    max-connections: 700
+    min-spare-threads: 10
+    max-http-header-size: 102400
+    connection-timeout: 3000000
+spring:
+  cloud:
+    config:
+      uri: http://127.0.0.1:8889
+      profile: dev
+      label: master
+  application:
+    name: flowtreatment-service
